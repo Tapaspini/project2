@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central</title>
+    <link rel="stylesheet" href="../css/project2.css">
+</head>
+<body>
+    <!-- Home Page Section -->
+    <header id="home">
+        <div class="container">
+            <h1>Welcome to Movie Buff Central</h1>
+            <p>Your ultimate fan page for [Movie/Franchise Name]</p>
+            <img src="movie-poster.jpg" alt="Movie Poster" class="poster-image">
+        </div>
+    </header>
+
+    <!-- Character Bios Section -->
+    <section id="characters">
+        <div class="container">
+            <h2>Character Bios</h2>
+            <div class="character">
+                <img src="character1.jpg" alt="Character 1" class="character-image">
+                <h3>Character Name 1</h3>
+                <p>A brief description and interesting facts about Character 1.</p>
+            </div>
+            <div class="character">
+                <img src="character2.jpg" alt="Character 2" class="character-image">
+                <h3>Character Name 2</h3>
+                <p>A brief description and interesting facts about Character 2.</p>
+            </div>
+            <!-- Add more character sections as needed -->
+        </div>
+    </section>
+
+    <!-- Movie Trailers Section -->
+    <section id="trailers">
+        <div class="container">
+            <h2>Movie Trailers</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-trailer-id" title="Movie Trailer"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Quote of the Day Section -->
+    <section id="quote">
+        <div class="container">
+            <h2>Quote of the Day</h2>
+            <p id="quote-text">"Here's a famous quote from the movie!"</p>
+            <button onclick="generateQuote()">Get a New Quote</button>
+        </div>
+    </section>
+
+    <!-- Trivia Quiz Section -->
+    <section id="trivia">
+        <div class="container">
+            <h2>Trivia Quiz</h2>
+            <p id="quiz-question">What year was the first movie released in this franchise?</p>
+            <button onclick="checkAnswer('1980')">1980</button>
+            <button onclick="checkAnswer('1990')">1990</button>
+            <button onclick="checkAnswer('2000')">2000</button>
+            <button onclick="checkAnswer('2010')">2010</button>
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+
+    <script src="../javascript/project2.js"></script>
+</body>
+</html>

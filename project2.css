@@ -1,0 +1,126 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header / Home Page */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.poster-image {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Character Bios Section */
+#characters {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.character-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.character h3 {
+    font-size: 1.5rem;
+}
+
+/* Movie Trailers Section */
+#trailers {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#trailers iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Quote of the Day Section */
+#quote {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#quote-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#quote button {
+    padding: 10px 20px;
+    background: #f4f4f4;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trivia Quiz Section */
+#trivia {
+    background: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#trivia p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#trivia button {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .character {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-image {
+        margin: 0 0 20px 0;
+    }
+}
